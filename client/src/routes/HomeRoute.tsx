@@ -49,7 +49,7 @@ export function HomeRoute() {
       {postsList.posts.map((post) => {
         return (
           <Link
-            to={`/ver-publicao/${post.id}`}
+            to={`/ver-publicacao/${post.id}`}
             key={post.id}
             className="border-b py-2 cursor-pointer block"
           >

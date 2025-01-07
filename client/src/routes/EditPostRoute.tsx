@@ -35,7 +35,7 @@ export function EditPostRoute() {
       const response = await api.put(`/posts/${params.id}`, event.data);
       if (response.data.id) {
         toast(texts.submitSuccess);
-        navigate(`/ver-publicação/${params.id}`);
+        navigate(`/ver-publicacao/${params.id}`);
       } else {
         toast(texts.submitFailure);
       }
